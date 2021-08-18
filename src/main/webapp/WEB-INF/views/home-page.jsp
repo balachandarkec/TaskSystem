@@ -31,7 +31,7 @@
 <div class=".allTasks">
 <ul>
 <c:forEach var="task" items="${tasks}">
-<li>${task.name}</li>
+<li>${task.name}<a href="delete/${task.id}">Delete</a></li>
 </c:forEach>
 </ul>
 </div>

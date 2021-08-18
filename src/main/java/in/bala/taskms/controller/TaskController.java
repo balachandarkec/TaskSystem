@@ -46,9 +46,12 @@ public class TaskController {
 	//@GetMapping("/delete/{id}")
 	@RequestMapping(value="/delete/{id}",method=RequestMethod.GET)
 	public String deleteTask(@PathVariable("id") int taskid) {
+		String status="home-page";
+		if(service.removeTask(taskid)) {
+			status="redirect:/";
+		}
 		
-		
-		return "redirect:/";
+		return status;
 	}
 
 }

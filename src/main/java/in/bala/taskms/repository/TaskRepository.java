@@ -42,5 +42,21 @@ public class TaskRepository {
 		
 	}
 	
+	// Delete  Task from ORM
+	
+	public boolean deleteTask(int id) {
+		boolean status=false;
+		
+		Task target=getCurrentSession().get(Task.class, id);
+		try {
+			getCurrentSession().remove(target);
+			status=true;
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return status;
+	}
+	
 
 }

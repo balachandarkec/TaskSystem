@@ -22,4 +22,9 @@ public class TaskService {
 	public List<Task> getAllTasks(){
 		return repo.getAllTask();
 	}
+	
+	
+	public boolean removeTask(int id) {
+		return repo.deleteTask(id);
+	}
 }

@@ -1,0 +1,6 @@
+in/bala/taskms/config/DispatcherServletConfig.class
+in/bala/taskms/model/Task.class
+in/bala/taskms/controller/TaskController.class
+in/bala/taskms/service/TaskService.class
+in/bala/taskms/config/AppConfig.class
+in/bala/taskms/repository/TaskRepository.class
